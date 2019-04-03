@@ -1,6 +1,28 @@
 package sample;
 
 import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
+    public static SceneManager sm = null;
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        sm = SceneManager.getInstance();
+        sm.setStage(primaryStage);
+
+        sm.changeSceneLevel(0);
+    }
+
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+}
+
+/**import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -20,5 +42,5 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-}
+}*/
 
