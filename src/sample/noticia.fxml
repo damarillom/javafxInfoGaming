@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="center" minWidth="100.0" prefHeight="603.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane fx:id="scene" alignment="center" minWidth="100.0" prefHeight="603.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <!--<columnConstraints>
       <ColumnConstraints halignment="CENTER" />
    </columnConstraints>
@@ -37,12 +37,12 @@
          <GridPane.margin>
             <Insets left="500.0" top="250.0" />
          </GridPane.margin></Label>
-      <Button fx:id="back" mnemonicParsing="false" onAction="#launchPrinView" text="&lt;" GridPane.rowIndex="2">
+      <Button fx:id="back" mnemonicParsing="false" onAction="#launchPrinView" text="Back" GridPane.rowIndex="2">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
          <GridPane.margin>
-            <Insets right="650.0" />
+            <Insets right="600.0" />
          </GridPane.margin></Button>
       <!--<Label fx:id="body" prefHeight="316.0" prefWidth="557.0" text="Label" wrapText="true" GridPane.rowIndex="1" />-->
       <ScrollPane fx:id="scroll" prefHeight="278.0" prefWidth="651.0" GridPane.rowIndex="1">

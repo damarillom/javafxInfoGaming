@@ -55,6 +55,17 @@ public class Controller {
         sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
     }
 
+    public void launchProfileView(ActionEvent event) throws IOException {
+        SceneManager sm = SceneManager.getInstance();
+        sm.changeSceneLevel(4);
+        //sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
+
+        TextField username = (TextField) sm.getCurrentScene().lookup("#username");
+        username.setText(name);
+        TextField mail = (TextField) sm.getCurrentScene().lookup("#email");
+        mail.setText(email);
+    }
+
     public void launchLoginView(ActionEvent event) throws IOException {
         SceneManager sm = SceneManager.getInstance();
         sm.changeSceneLevel(0);
@@ -64,6 +75,13 @@ public class Controller {
     public void launchPrinView(ActionEvent event) throws IOException {
         SceneManager sm = SceneManager.getInstance();
         sm.changeSceneLevel(2);
+
+        Button perfil = (Button) sm.getCurrentScene().lookup("#perfil");
+        Image image = new Image(getClass().getResourceAsStream("../img/flecha.png"));
+
+        ImageView imageView = new ImageView(image);
+        //-fx-background-image: url("/pic.jpeg");
+        perfil.setGraphic(imageView);
 
 
         ObservableList<String> list = FXCollections.observableArrayList("Noticia1", "Noticia2", "Noticia3", "Noticia4");
@@ -91,7 +109,7 @@ public class Controller {
         SceneManager sm = SceneManager.getInstance();
         sm.changeSceneLevel(3);
         Label title = (Label) sm.getCurrentScene().lookup("#title");
-        title.setText(name);
+        title.setText(" " + name + " ");
         //Label body = (Label) sm.getCurrentScene().lookup("#body");
         ScrollPane scrollPane = (ScrollPane) sm.getCurrentScene().lookup("#scroll");
         ImageView imageView = (ImageView) sm.getCurrentScene().lookup("#image");
@@ -138,26 +156,7 @@ public class Controller {
             Image image = new Image(getClass().getResourceAsStream("../img/header.jpg"));
             imageView.setImage(image);
         } else if (name.equals("Noticia3")) {
-            Label text = new Label("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" +
-                    " et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut" +
-                    " aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum" +
-                    " dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui" +
-                    " officia deserunt mollit anim id est laborum.\n\n"+
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" +
-                    " et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut" +
-                    " aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum" +
-                    " dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui" +
-                    " officia deserunt mollit anim id est laborum.\n\n"+
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" +
-                    " et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut" +
-                    " aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum" +
-                    " dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui" +
-                    " officia deserunt mollit anim id est laborum.\n\n"+
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" +
-                    " et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut" +
-                    " aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum" +
-                    " dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui" +
-                    " officia deserunt mollit anim id est laborum.\n\n");
+            Label text = new Label(noticia2);
             text.setWrapText(true);
             scrollPane.setFitToWidth(true);
             scrollPane.setContent(text);
@@ -165,26 +164,7 @@ public class Controller {
             Image image = new Image(getClass().getResourceAsStream("../img/header.jpg"));
             imageView.setImage(image);
         } else if (name.equals("Noticia4")) {
-            Label text = new Label("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" +
-                    " et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut" +
-                    " aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum" +
-                    " dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui" +
-                    " officia deserunt mollit anim id est laborum.\n\n"+
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" +
-                    " et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut" +
-                    " aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum" +
-                    " dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui" +
-                    " officia deserunt mollit anim id est laborum.\n\n"+
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" +
-                    " et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut" +
-                    " aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum" +
-                    " dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui" +
-                    " officia deserunt mollit anim id est laborum.\n\n"+
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" +
-                    " et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut" +
-                    " aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum" +
-                    " dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui" +
-                    " officia deserunt mollit anim id est laborum.\n\n");
+            Label text = new Label(noticia2);
             text.setWrapText(true);
             scrollPane.setFitToWidth(true);
             scrollPane.setContent(text);

@@ -13,6 +13,7 @@ public class Main extends Application {
         sm.setStage(primaryStage);
 
         sm.changeSceneLevel(0);
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
     }
 
 

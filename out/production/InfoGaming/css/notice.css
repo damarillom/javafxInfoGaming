@@ -8,5 +8,12 @@
 }
 #title {
     -fx-font-size: 15pt ;
-    -fx-background-color: white;
+    -fx-background-color: #23ABF4;
+}
+#scroll {
+    -fx-border-color: #23ABF4;
+    -fx-background-color: #23ABF4;
+}
+#scene {
+    -fx-background-color: #23ABF4;
 }
