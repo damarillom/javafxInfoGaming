@@ -22,11 +22,13 @@ public class Controller {
     public void launchRegisterView(ActionEvent event) throws IOException {
         SceneManager sm = SceneManager.getInstance();
         sm.changeSceneLevel(1);
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
     }
 
     public void launchLoginView(ActionEvent event) throws IOException {
         SceneManager sm = SceneManager.getInstance();
         sm.changeSceneLevel(0);
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
     }
 
     public void launchPrinView(ActionEvent event) throws IOException {
@@ -48,9 +50,11 @@ public class Controller {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                System.out.println("clicked on " + listView.getSelectionModel().getSelectedItem());
-            }
-        });
+                    System.out.println("clicked on " + listView.getSelectionModel().getSelectedItem());
+                }
+            });
+
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
     }
 
     private void lauchNoticeView(String name) throws IOException {
@@ -58,11 +62,17 @@ public class Controller {
         sm.changeSceneLevel(3);
         Label title = (Label) sm.getCurrentScene().lookup("#title");
         title.setText(name);
-        sm.getCurrentScene().getStylesheets().add(getClass().getResource("notice.css").toExternalForm());
+        Label body = (Label) sm.getCurrentScene().lookup("#body");
+        body.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\n" +
+                " et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n" +
+                " aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum\n" +
+                " dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui\n" +
+                " officia deserunt mollit anim id est laborum.");
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/notice.css").toExternalForm());
 
-        Button back = (Button) sm.getCurrentScene().lookup("#back");
-        Image image = new Image(getClass().getResourceAsStream("../img/Back_Arrow.svg.png"));
-        back.setGraphic(new ImageView(image));
+        ImageView imageView = (ImageView) sm.getCurrentScene().lookup("#image");
+        Image image = new Image(getClass().getResourceAsStream("../img/header.jpg"));
+        imageView.setImage(image);
         //back.setGraphic ImageView.new(image("src/code/media/logo.png"));
 
     }

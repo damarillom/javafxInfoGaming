@@ -33,9 +33,9 @@
    <children>
       <Label fx:id="user" text="user:" textAlignment="CENTER" GridPane.rowIndex="0" />
       <Label fx:id="pass" text="password:" textAlignment="CENTER" GridPane.rowIndex="1" />
-      <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#launchPrinView" text="Login" GridPane.rowIndex="3" />
+      <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#launchPrinView" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <TextField GridPane.columnIndex="1" />
       <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#launchRegisterView" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#launchRegisterView" text="Register" GridPane.rowIndex="3" />
    </children>
 </GridPane>
