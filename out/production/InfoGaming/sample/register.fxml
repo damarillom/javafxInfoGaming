@@ -39,14 +39,14 @@
       <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" valignment="CENTER" />
    </rowConstraints>
    <children>
-      <Label fx:id="user" text="user:" textAlignment="CENTER" GridPane.rowIndex="0" />
-      <Label fx:id="emails" text="email:" textAlignment="CENTER" GridPane.rowIndex="1" />
-      <Label fx:id="pass" text="password:" textAlignment="CENTER" GridPane.rowIndex="2" />
-      <Label fx:id="photo" text="photo:" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+      <Label fx:id="user" text="User:" textAlignment="CENTER" GridPane.rowIndex="0" />
+      <Label fx:id="emails" text="Email:" textAlignment="CENTER" GridPane.rowIndex="1" />
+      <Label fx:id="pass" text="Password:" textAlignment="CENTER" GridPane.rowIndex="2" />
+      <Label fx:id="photo" text="Photo:" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets bottom="30.0" />
          </GridPane.margin></Label>
-      <Label fx:id="repass" text="repeat password:" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Label fx:id="repass" text="Repeat password:" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
       <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#launchPrinViewRegister" text="Register" GridPane.columnIndex="3" GridPane.rowIndex="5" />
       <TextField fx:id="username" GridPane.columnIndex="1" />
       <PasswordField fx:id="passCon" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -58,6 +58,10 @@
             <Insets bottom="30.0" />
          </GridPane.margin></Button>
       <CheckBox fx:id="dev" mnemonicParsing="false" text="Developer?" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-      <Label fx:id="error" prefHeight="16.0" prefWidth="205.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label fx:id="error" prefHeight="16.0" prefWidth="205.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="-600.0" right="-600.0" />
+         </GridPane.margin>
+      </Label>
    </children>
 </GridPane>
