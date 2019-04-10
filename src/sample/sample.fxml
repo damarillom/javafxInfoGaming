@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane fx:id="scene" alignment="center" minWidth="100.0" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane fx:id="scene" alignment="center" minWidth="100.0" prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <!--<columnConstraints>
       <ColumnConstraints halignment="CENTER" />
    </columnConstraints>
@@ -22,8 +22,9 @@
       <Button fx:id="helloBtn" mnemonicParsing="false" onAction="#pressHelloBtn" text="Say Hello!" GridPane.rowIndex="2" />
    </children>-->
    <columnConstraints>
-      <ColumnConstraints halignment="CENTER" />
-      <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" maxWidth="82.0" minWidth="58.0" prefWidth="82.0" />
+      <ColumnConstraints halignment="CENTER" maxWidth="65.0" minWidth="1.0" prefWidth="1.0" />
+      <ColumnConstraints halignment="CENTER" maxWidth="142.0" minWidth="10.0" prefWidth="142.0" />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
@@ -34,9 +35,9 @@
    <children>
       <Label fx:id="user" text="User:" textAlignment="CENTER" GridPane.rowIndex="0" />
       <Label fx:id="pass" text="Password:" textAlignment="CENTER" GridPane.rowIndex="1" />
-      <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#launchPrinViewLogin" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <TextField fx:id="username" GridPane.columnIndex="1" />
-      <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#launchPrinViewLogin" text="Login" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <TextField fx:id="username" GridPane.columnIndex="2" />
+      <PasswordField fx:id="password" GridPane.columnIndex="2" GridPane.rowIndex="1" />
       <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#launchRegisterView" text="Register" GridPane.rowIndex="3" />
    </children>
 </GridPane>

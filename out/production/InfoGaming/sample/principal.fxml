@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane fx:id="scene" alignment="center" minWidth="100.0" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane fx:id="scene" alignment="center" minWidth="100.0" prefHeight="690.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <!--<columnConstraints>
       <ColumnConstraints halignment="CENTER" />
    </columnConstraints>
@@ -28,7 +28,7 @@
       <RowConstraints maxHeight="633.0" minHeight="10.0" prefHeight="607.0" valignment="CENTER" />
    </rowConstraints>
    <children>
-      <ListView fx:id="listView" onMouseClicked="#launchLoginView" prefHeight="638.0" prefWidth="750.0" GridPane.rowIndex="1" />
+      <ListView fx:id="listView" onMouseClicked="#launchLoginView" prefHeight="670.0" prefWidth="749.0" GridPane.rowIndex="1" />
       <Button fx:id="perfil" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#launchProfileView" prefHeight="50.0" prefWidth="50.0">
          <GridPane.margin>
             <Insets left="650.0" />

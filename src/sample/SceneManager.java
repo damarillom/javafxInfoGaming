@@ -52,11 +52,11 @@ public class SceneManager {
         Parent profileViewParent = FXMLLoader.load(getClass().getResource("perfil.fxml"));
         scenes = new ArrayList<Scene>();
 
-        scenes.add(new Scene(loginViewParent, 1280, 768));
-        scenes.add(new Scene(registerViewParent, 1280, 768));
-        scenes.add(new Scene(prinViewParent, 1280, 768));
-        scenes.add(new Scene(noticiaViewParent, 1280, 768));
-        scenes.add(new Scene(profileViewParent, 1280, 768));
+        scenes.add(new Scene(loginViewParent, 500, 250));
+        scenes.add(new Scene(registerViewParent, 500, 250));
+        scenes.add(new Scene(prinViewParent, 800, 690));
+        scenes.add(new Scene(noticiaViewParent, 749, 670));
+        scenes.add(new Scene(profileViewParent, 500, 286));
     }
 
     public void setStage(Stage stage){
