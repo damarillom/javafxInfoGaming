@@ -47,7 +47,7 @@
       <!--<Label fx:id="body" prefHeight="316.0" prefWidth="557.0" text="Label" wrapText="true" GridPane.rowIndex="1" />-->
       <ScrollPane fx:id="scroll" prefHeight="278.0" prefWidth="651.0" GridPane.rowIndex="1">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+          <AnchorPane fx:id="scroll2" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
         </content>
       </ScrollPane>
    </children>

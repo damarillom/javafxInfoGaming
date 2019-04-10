@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -34,28 +35,33 @@
       <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="21.0" valignment="CENTER" />
       <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="39.0" valignment="CENTER" />
       <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" valignment="CENTER" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+      <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="28.0" valignment="CENTER" />
+      <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" valignment="CENTER" />
    </rowConstraints>
    <children>
-      <Label fx:id="user" text="user:" textAlignment="CENTER" GridPane.rowIndex="0" />
-      <Label fx:id="emails" text="email:" textAlignment="CENTER" GridPane.rowIndex="1" />
-      <Label fx:id="pass" text="password:" textAlignment="CENTER" GridPane.rowIndex="2" />
-      <Label fx:id="photo" text="photo:" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+      <Label fx:id="user" text="User:" textAlignment="CENTER" GridPane.rowIndex="0" />
+      <Label fx:id="emails" text="Email:" textAlignment="CENTER" GridPane.rowIndex="1" />
+      <Label fx:id="pass" text="Password:" textAlignment="CENTER" GridPane.rowIndex="2" />
+      <Label fx:id="photo" text="Photo:" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets bottom="30.0" />
          </GridPane.margin></Label>
-      <Label fx:id="repass" text="repeat password:" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-      <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#launchPrinView" text="Register" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-      <TextField GridPane.columnIndex="1" />
-      <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <TextField GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <Label fx:id="repass" text="Repeat password:" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#launchPrinViewRegister" text="Register" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <TextField fx:id="username" GridPane.columnIndex="1" />
+      <PasswordField fx:id="passCon" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="mail" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <PasswordField fx:id="repassCon" GridPane.columnIndex="4" GridPane.rowIndex="2" />
       <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#launchLoginView" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
       <Button fx:id="photos" mnemonicParsing="false" text="+" GridPane.columnIndex="4" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets bottom="30.0" />
          </GridPane.margin></Button>
-      <CheckBox mnemonicParsing="false" text="Developer?" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <CheckBox fx:id="dev" mnemonicParsing="false" text="Developer?" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label fx:id="error" prefHeight="16.0" prefWidth="205.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="-600.0" right="-600.0" />
+         </GridPane.margin>
+      </Label>
    </children>
 </GridPane>

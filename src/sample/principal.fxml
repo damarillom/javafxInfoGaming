@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -28,6 +29,9 @@
    </rowConstraints>
    <children>
       <ListView fx:id="listView" onMouseClicked="#launchLoginView" prefHeight="638.0" prefWidth="750.0" GridPane.rowIndex="1" />
-      <Button fx:id="perfil" mnemonicParsing="false" onAction="#launchProfileView" />
+      <Button fx:id="perfil" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#launchProfileView" prefHeight="50.0" prefWidth="50.0">
+         <GridPane.margin>
+            <Insets left="650.0" />
+         </GridPane.margin></Button>
    </children>
 </GridPane>

@@ -1,15 +1,15 @@
 .list-cell:filled:selected:focused, .list-cell:filled:selected {
     -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
     -fx-text-fill: white;
-    -fx-font-size: 50px;
 }
 
 .list-cell{
     -fx-font-size:24.0;
+    -fx-background-color: linear-gradient(#3fe7ff 0%, #2be4ff 25%, #19e1ff 75%, #00ddff 100%);
 }
 
-.list-cell:even { /* <=== changed to even */
-    -fx-background-color: white;
+.list-cell:even {
+    -fx-background-color: cyan;
 }
 
 .list-cell:filled:hover {
@@ -19,4 +19,8 @@
 
 #scene {
     -fx-background-color: #23ABF4;
+}
+
+.button {
+    -fx-background-size: 50, 50;
 }

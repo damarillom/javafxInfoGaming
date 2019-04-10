@@ -12,7 +12,7 @@
 }
 #scroll {
     -fx-border-color: #23ABF4;
-    -fx-background-color: #23ABF4;
+    -fx-background-color:transparent;
 }
 #scene {
     -fx-background-color: #23ABF4;

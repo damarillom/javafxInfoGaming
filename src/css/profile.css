@@ -1,12 +1,5 @@
-#photo {
-    -fx-background-radius: 50 50 50 50;
-    -fx-border-radius: 50;
-}
 #scene {
     -fx-background-color: #23ABF4;
-}
-#error {
-    -fx-text-fill: red;
 }
 .button {
     -fx-background-radius: 50 50 50 50;

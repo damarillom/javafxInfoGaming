@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Controller {
     public static String name = "User";
     public static String email = "ejemplo@gmail.es";
@@ -62,8 +63,20 @@ public class Controller {
 
         TextField username = (TextField) sm.getCurrentScene().lookup("#username");
         username.setText(name);
-        TextField mail = (TextField) sm.getCurrentScene().lookup("#email");
+        TextField mail = (TextField) sm.getCurrentScene().lookup("#mail");
         mail.setText(email);
+
+
+        //Button perfil = (Button) sm.getCurrentScene().lookup("#photoPer");
+        Image image = new Image(getClass().getResourceAsStream("../img/index.png"));
+        ImageView imageView = (ImageView) sm.getCurrentScene().lookup("#photoPer");
+        imageView.setImage(image);
+
+        CheckBox checkBox = (CheckBox) sm.getCurrentScene().lookup("#developer");
+        checkBox.setSelected(dep);
+
+
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/profile.css").toExternalForm());
     }
 
     public void launchLoginView(ActionEvent event) throws IOException {
@@ -74,10 +87,11 @@ public class Controller {
 
     public void launchPrinView(ActionEvent event) throws IOException {
         SceneManager sm = SceneManager.getInstance();
+
         sm.changeSceneLevel(2);
 
         Button perfil = (Button) sm.getCurrentScene().lookup("#perfil");
-        Image image = new Image(getClass().getResourceAsStream("../img/flecha.png"));
+        Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
 
         ImageView imageView = new ImageView(image);
         //-fx-background-image: url("/pic.jpeg");
@@ -105,6 +119,96 @@ public class Controller {
         sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
     }
 
+    public void launchPrinViewLogin(ActionEvent event) throws IOException {
+        SceneManager sm = SceneManager.getInstance();
+        TextField textField = (TextField) sm.getCurrentScene().lookup("#username");
+        name = String.valueOf(textField.getText());
+
+        sm.changeSceneLevel(2);
+
+        Button perfil = (Button) sm.getCurrentScene().lookup("#perfil");
+        Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
+
+        ImageView imageView = new ImageView(image);
+        //-fx-background-image: url("/pic.jpeg");
+        perfil.setGraphic(imageView);
+
+
+        ObservableList<String> list = FXCollections.observableArrayList("Noticia1", "Noticia2", "Noticia3", "Noticia4");
+        //ListView listView = new ListView<>(list);
+        ListView listView = (ListView) sm.getCurrentScene().lookup("#listView");
+        listView.setItems(list);
+
+
+
+
+        listView.setOnMouseClicked(new EventHandler<MouseEvent>() {
+
+            @Override
+            public void handle(MouseEvent event) {
+                try {
+                    lauchNoticeView((String) listView.getSelectionModel().getSelectedItem());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("clicked on " + listView.getSelectionModel().getSelectedItem());
+            }
+        });
+
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
+    }
+
+    public void launchPrinViewRegister(ActionEvent event) throws IOException {
+        SceneManager sm = SceneManager.getInstance();
+        TextField textField1 = (TextField) sm.getCurrentScene().lookup("#username");
+        name = String.valueOf(textField1.getText());
+
+        TextField textField2 = (TextField) sm.getCurrentScene().lookup("#mail");
+        email = String.valueOf(textField2.getText());
+
+        CheckBox checkBox = (CheckBox) sm.getCurrentScene().lookup("#dev");
+        dep = checkBox.isSelected();
+
+        PasswordField passwordField1 = (PasswordField) sm.getCurrentScene().lookup("#passCon");
+        PasswordField passwordField2 = (PasswordField) sm.getCurrentScene().lookup("#repassCon");
+        //SceneManager sm = SceneManager.getInstance();
+        String pass = String.valueOf(passwordField1.getText());
+        String repass = String.valueOf(passwordField2.getText());
+        if (pass.equals(repass)) {
+            sm.changeSceneLevel(2);
+
+            Button perfil = (Button) sm.getCurrentScene().lookup("#perfil");
+            Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
+
+            ImageView imageView = new ImageView(image);
+            //-fx-background-image: url("/pic.jpeg");
+            perfil.setGraphic(imageView);
+
+
+            ObservableList<String> list = FXCollections.observableArrayList("Noticia1", "Noticia2", "Noticia3", "Noticia4");
+            //ListView listView = new ListView<>(list);
+            ListView listView = (ListView) sm.getCurrentScene().lookup("#listView");
+            listView.setItems(list);
+
+            listView.setOnMouseClicked(new EventHandler<MouseEvent>() {
+
+                @Override
+                public void handle(MouseEvent event) {
+                    try {
+                        lauchNoticeView((String) listView.getSelectionModel().getSelectedItem());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("clicked on " + listView.getSelectionModel().getSelectedItem());
+                }
+            });
+
+            sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
+        } else {
+            Label error = (Label) sm.getCurrentScene().lookup("#error");
+            error.setText("Las contraseñas no coinciden.");
+        }
+    }
     private void lauchNoticeView(String name) throws IOException {
         SceneManager sm = SceneManager.getInstance();
         sm.changeSceneLevel(3);
@@ -178,6 +282,14 @@ public class Controller {
         sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/notice.css").toExternalForm());
     }
 
+    public void save(ActionEvent event) throws IOException {
+        SceneManager sm = SceneManager.getInstance();
+        TextField textField = (TextField) sm.getCurrentScene().lookup("#username");
+        name = String.valueOf(textField.getText());
+
+        TextField textField2 = (TextField) sm.getCurrentScene().lookup("#mail");
+        email = String.valueOf(textField2.getText());
+    }
     /**public void lauchNoticeView(ActionEvent event) throws  IOException {
         SceneManager sm = SceneManager.getInstance();
         sm.changeSceneLevel(3);
