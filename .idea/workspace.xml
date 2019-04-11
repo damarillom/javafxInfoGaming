@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/Hollow-Knight-Silksong.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/overchars-640x255.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/thumb-1920-992033.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/css/notice.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/css/notice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/img/Back_Arrow.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/img/blogs_peque_cine-el-cielo-sobre-tatooine1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/img/ereina_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/img/flecha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/sample/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/sample/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/sample/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/sample/Controller$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/sample/Controller$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/sample/Controller$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/sample/SceneManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/sample/SceneManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/sample/noticia.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/sample/noticia.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/sample/perfil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/sample/perfil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/sample/principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/sample/principal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/sample/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/sample/register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoGaming/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoGaming/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/notice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/notice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/Back_Arrow.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/blogs_peque_cine-el-cielo-sobre-tatooine1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/ereina_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/flecha.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/noticia.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/noticia.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/perfil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/perfil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/principal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,16 +58,36 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-871673686">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="91" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="91" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="292" column="109" selection-start-line="292" selection-start-column="109" selection-end-line="292" selection-end-column="109" />
+            <state relative-caret-position="399">
+              <caret line="218" column="59" selection-start-line="218" selection-start-column="59" selection-end-line="218" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -121,7 +112,7 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/img/header.jpg">
           <provider selected="true" editor-type-id="images" />
         </entry>
@@ -129,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/notice.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="285">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -138,7 +129,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/formulari.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="57">
               <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
@@ -208,6 +199,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,7 +234,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,7 +292,7 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration default="true" type="Applet">
+    <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -330,7 +321,6 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -339,8 +329,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
+    <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -351,11 +340,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -403,10 +392,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.22707888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.22970085" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -415,7 +404,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32286024" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3227223" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -483,6 +472,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
@@ -502,9 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,9 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -566,29 +552,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/notice.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/formulari.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/overwatch-characters-centred-i49233.jpg">
+    <entry file="file://$PROJECT_DIR$/src/img/overwatch-characters-centred-i49233.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/img/flecha.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="292" column="109" selection-start-line="292" selection-start-column="109" selection-end-line="292" selection-end-column="109" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/img/blogs_peque_cine-el-cielo-sobre-tatooine1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/Back_Arrow.svg.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/img/overchars-640x255.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -602,17 +574,29 @@
     <entry file="file://$PROJECT_DIR$/src/img/Hollow-Knight-Silksong.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/flecha.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/css/notice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/blogs_peque_cine-el-cielo-sobre-tatooine1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/Back_Arrow.svg.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/css/formulari.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/img/header.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="218" column="59" selection-start-line="218" selection-start-column="59" selection-end-line="218" selection-end-column="59" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

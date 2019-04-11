@@ -179,39 +179,44 @@ public class Controller {
         //SceneManager sm = SceneManager.getInstance();
         String pass = String.valueOf(passwordField1.getText());
         String repass = String.valueOf(passwordField2.getText());
-        if (pass.equals(repass)) {
-            sm.changeSceneLevel(2);
+        if (!(name.equals("") || email.equals("") || pass.equals(""))) {
+            if (pass.equals(repass)) {
+                sm.changeSceneLevel(2);
 
-            Button perfil = (Button) sm.getCurrentScene().lookup("#perfil");
-            Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
+                Button perfil = (Button) sm.getCurrentScene().lookup("#perfil");
+                Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
 
-            ImageView imageView = new ImageView(image);
-            //-fx-background-image: url("/pic.jpeg");
-            perfil.setGraphic(imageView);
+                ImageView imageView = new ImageView(image);
+                //-fx-background-image: url("/pic.jpeg");
+                perfil.setGraphic(imageView);
 
 
-            //ObservableList<String> listNotice = FXCollections.observableArrayList("Noticia1", "Noticia2", "Noticia3", "Noticia4");
-            //ListView listView = new ListView<>(list);
-            ListView listView = (ListView) sm.getCurrentScene().lookup("#listView");
-            listView.setItems(listNotice);
+                //ObservableList<String> listNotice = FXCollections.observableArrayList("Noticia1", "Noticia2", "Noticia3", "Noticia4");
+                //ListView listView = new ListView<>(list);
+                ListView listView = (ListView) sm.getCurrentScene().lookup("#listView");
+                listView.setItems(listNotice);
 
-            listView.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                listView.setOnMouseClicked(new EventHandler<MouseEvent>() {
 
-                @Override
-                public void handle(MouseEvent event) {
-                    try {
-                        lauchNoticeView((String) listView.getSelectionModel().getSelectedItem());
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                    @Override
+                    public void handle(MouseEvent event) {
+                        try {
+                            lauchNoticeView((String) listView.getSelectionModel().getSelectedItem());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        System.out.println("clicked on " + listView.getSelectionModel().getSelectedItem());
                     }
-                    System.out.println("clicked on " + listView.getSelectionModel().getSelectedItem());
-                }
-            });
+                });
 
-            sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
+                sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
+            } else {
+                Label error = (Label) sm.getCurrentScene().lookup("#error");
+                error.setText("Las contraseñas no coinciden.");
+            }
         } else {
             Label error = (Label) sm.getCurrentScene().lookup("#error");
-            error.setText("Las contraseñas no coinciden.");
+            error.setText("  Hay campos sin rellenar.");
         }
     }
     private void lauchNoticeView(String nom) throws IOException {
