@@ -58,7 +58,8 @@ public class Controller {
     public void launchRegisterView(ActionEvent event) throws IOException {
         SceneManager sm = SceneManager.getInstance();
         sm.changeSceneLevel(1);
-        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
+        //sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("/css/formulari.css").toExternalForm());
     }
 
     public void launchProfileView(ActionEvent event) throws IOException {
@@ -73,7 +74,8 @@ public class Controller {
 
 
         //Button perfil = (Button) sm.getCurrentScene().lookup("#photoPer");
-        Image image = new Image(getClass().getResourceAsStream("../img/index.png"));
+        //Image image = new Image(getClass().getResourceAsStream("../img/index.png"));
+        Image image = new Image(getClass().getResourceAsStream("/img/index.png"));
         ImageView imageView = (ImageView) sm.getCurrentScene().lookup("#photoPer");
         imageView.setImage(image);
 
@@ -81,13 +83,15 @@ public class Controller {
         checkBox.setSelected(dep);
 
 
-        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/profile.css").toExternalForm());
+        //sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/profile.css").toExternalForm());
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("/css/profile.css").toExternalForm());
     }
 
     public void launchLoginView(ActionEvent event) throws IOException {
         SceneManager sm = SceneManager.getInstance();
         sm.changeSceneLevel(0);
-        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
+        //sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("/css/formulari.css").toExternalForm());
     }
 
     public void launchPrinView(ActionEvent event) throws IOException {
@@ -96,7 +100,8 @@ public class Controller {
         sm.changeSceneLevel(2);
 
         Button perfil = (Button) sm.getCurrentScene().lookup("#perfil");
-        Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
+        //Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
+        Image image = new Image(getClass().getResourceAsStream("/img/index.png"), 46, 46, false, false);
 
         ImageView imageView = new ImageView(image);
         //-fx-background-image: url("/pic.jpeg");
@@ -121,7 +126,8 @@ public class Controller {
                 }
             });
 
-        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
+        //sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("/css/prin.css").toExternalForm());
     }
 
     public void launchPrinViewLogin(ActionEvent event) throws IOException {
@@ -132,7 +138,9 @@ public class Controller {
         sm.changeSceneLevel(2);
 
         Button perfil = (Button) sm.getCurrentScene().lookup("#perfil");
-        Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
+        //Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
+        Image image = new Image(getClass().getResourceAsStream("/img/index.png"), 46, 46, false, false);
+
 
         ImageView imageView = new ImageView(image);
         //-fx-background-image: url("/pic.jpeg");
@@ -160,7 +168,9 @@ public class Controller {
             }
         });
 
-        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
+        //sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
+        sm.getCurrentScene().getStylesheets().add(getClass().getResource("/css/prin.css").toExternalForm());
+
     }
 
     public void launchPrinViewRegister(ActionEvent event) throws IOException {
@@ -184,7 +194,9 @@ public class Controller {
                 sm.changeSceneLevel(2);
 
                 Button perfil = (Button) sm.getCurrentScene().lookup("#perfil");
-                Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
+                //Image image = new Image(getClass().getResourceAsStream("../img/index.png"), 46, 46, false, false);
+                Image image = new Image(getClass().getResourceAsStream("/img/index.png"), 46, 46, false, false);
+
 
                 ImageView imageView = new ImageView(image);
                 //-fx-background-image: url("/pic.jpeg");
@@ -209,7 +221,9 @@ public class Controller {
                     }
                 });
 
-                sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
+                //sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/prin.css").toExternalForm());
+                sm.getCurrentScene().getStylesheets().add(getClass().getResource("/css/prin.css").toExternalForm());
+
             } else {
                 Label error = (Label) sm.getCurrentScene().lookup("#error");
                 error.setText("Las contraseñas no coinciden.");
@@ -251,7 +265,9 @@ public class Controller {
                 scrollPane.setContent(text);
                 scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
 
-                Image image = new Image(getClass().getResourceAsStream("../img/overchars-640x255.jpg"));
+                //Image image = new Image(getClass().getResourceAsStream("../img/overchars-640x255.jpg"));
+                Image image = new Image(getClass().getResourceAsStream("/img/overchars-640x255.jpg"));
+
                 imageView.setImage(image);
             } else if (nom.equals("Noticia2")) {
                 /**body.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" +
@@ -279,7 +295,9 @@ public class Controller {
                 scrollPane.setFitToWidth(true);
                 scrollPane.setContent(text);
                 scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-                Image image = new Image(getClass().getResourceAsStream("../img/header.jpg"));
+                //Image image = new Image(getClass().getResourceAsStream("../img/header.jpg"));
+                Image image = new Image(getClass().getResourceAsStream("/img/header.jpg"));
+
                 imageView.setImage(image);
             } else if (nom.equals("Noticia3")) {
                 Label text = new Label(noticia3);
@@ -287,7 +305,9 @@ public class Controller {
                 scrollPane.setFitToWidth(true);
                 scrollPane.setContent(text);
                 scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-                Image image = new Image(getClass().getResourceAsStream("../img/thumb-1920-992033.jpg"));
+                //Image image = new Image(getClass().getResourceAsStream("../img/thumb-1920-992033.jpg"));
+                Image image = new Image(getClass().getResourceAsStream("/img/thumb-1920-992033.jpg"));
+
                 imageView.setImage(image);
             } else if (nom.equals("Noticia4")) {
                 Label text = new Label(noticia4);
@@ -295,13 +315,17 @@ public class Controller {
                 scrollPane.setFitToWidth(true);
                 scrollPane.setContent(text);
                 scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-                Image image = new Image(getClass().getResourceAsStream("../img/Hollow-Knight-Silksong.png"));
+                //Image image = new Image(getClass().getResourceAsStream("../img/Hollow-Knight-Silksong.png"));
+                Image image = new Image(getClass().getResourceAsStream("/img/Hollow-Knight-Silksong.png"));
+
                 imageView.setImage(image);
             }
             //back.setGraphic ImageView.new(image("src/code/media/logo.png"));
 
 
-            sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/notice.css").toExternalForm());
+            //sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/notice.css").toExternalForm());
+            sm.getCurrentScene().getStylesheets().add(getClass().getResource("/css/notice.css").toExternalForm());
+
         }
     }
 

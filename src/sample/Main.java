@@ -9,11 +9,16 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        sm = SceneManager.getInstance();
-        sm.setStage(primaryStage);
+        try {
+            sm = SceneManager.getInstance();
+            sm.setStage(primaryStage);
 
-        sm.changeSceneLevel(0);
-        sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
+            sm.changeSceneLevel(0);
+            //sm.getCurrentScene().getStylesheets().add(getClass().getResource("../css/formulari.css").toExternalForm());
+            sm.getCurrentScene().getStylesheets().add(getClass().getResource("/css/formulari.css").toExternalForm());
+        } catch (Exception e) {
+
+        }
     }
 
 
